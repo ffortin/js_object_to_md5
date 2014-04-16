@@ -1,9 +1,15 @@
 js_object_to_md5
 ================
 
-Converts a javascript object to a md5 hash
+Deeply scans and converts a javascript object to a md5 hash.
 
 Warning: Will not work on JS objects that contain functions at any level of their hierarchy. Will ignore array ordering, such that [1,2] and [2,1] produce the same hash.
+
+Requirements
+============
+Your project must include:
+- Underscore.js
+- CryptoJS
 
 How to Install
 ============
