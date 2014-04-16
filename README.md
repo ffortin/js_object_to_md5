@@ -5,6 +5,10 @@ Deeply scans and converts a javascript object to a md5 hash.
 
 Warning: Will not work on JS objects that contain functions at any level of their hierarchy. Will ignore array ordering, such that [1,2] and [2,1] produce the same hash.
 
+Why this function?
+============
+This is extremely useful to test the equivalence of two objects, or to store a hashed version for later quick and indexed comparison (it's much easier to compare md5 hashes than to a full recursive lookup to determine equivalence).
+
 Requirements
 ============
 Your project must include:
